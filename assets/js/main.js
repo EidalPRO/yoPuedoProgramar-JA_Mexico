@@ -1,3 +1,20 @@
+
+window.addEventListener("load", () => {
+  const loader = document.querySelector(".loader-container");
+  if (loader) {
+    loader.classList.add("hide");
+    setTimeout(() => {
+      loader.remove();
+      document.body.classList.remove("loading");
+    }, 500);
+  }
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.body.classList.add("loading");
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   AOS.init();
 
