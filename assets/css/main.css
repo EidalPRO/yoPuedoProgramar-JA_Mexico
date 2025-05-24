@@ -273,7 +273,7 @@ spline-viewer {
 /* Luna */
 .bg-gradient {
     padding: 0;
-    background: linear-gradient(135deg, #0c0c2c, #1a1a40);
+    background: linear-gradient(135deg, #0c0c2c, #000000);
     color: #fff;
     position: relative;
     overflow: hidden;
@@ -293,10 +293,16 @@ spline-viewer {
     z-index: 0;
 }
 
-.bg-gradient .container {
-    position: relative;
-    z-index: 1;
+.moon-gif {
+    filter: contrast(1.1) brightness(1.2) drop-shadow( 0 0 30px rgba(0, 0, 0, 0.5));
 }
+
+.moon-image-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
 
 
 /* Linea del tiempo */
