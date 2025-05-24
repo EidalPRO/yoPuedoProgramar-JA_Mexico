@@ -162,22 +162,16 @@ a:hover {
 }
 
 /* Hero Image */
-
-spline-viewer {
-    scale: .85;
+.hero-gif {
+    filter: drop-shadow( 0 0 50px rgba(108, 99, 255, 0.5));
+    transform: translateZ(0);
+    image-rendering: -webkit-optimize-contrast;
 }
 
-@media (max-width: 992px) {
-    .hero-section {
-        z-index: 1;
-        ;
-    }
 
-    spline-viewer {
-        position: absolute;
-        left: -70%;
-        z-index: -1;
-        scale: 0.4;
+@media (max-width: 992px) {
+    .hero-gif {
+        width: 800px;
     }
 }
 
